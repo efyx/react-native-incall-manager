@@ -709,6 +709,8 @@ RCT_EXPORT_METHOD(getIsWiredHeadsetPluggedIn:(RCTPromiseResolveBlock)resolve
 
 - (void)startProximitySensor
 {
+    return;
+
     if (_isProximityRegistered) {
         return;
     }
@@ -738,6 +740,8 @@ RCT_EXPORT_METHOD(getIsWiredHeadsetPluggedIn:(RCTPromiseResolveBlock)resolve
 
 - (void)stopProximitySensor
 {
+    return;
+
     if (!_isProximityRegistered) {
         return;
     }
